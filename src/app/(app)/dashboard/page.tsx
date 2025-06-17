@@ -22,10 +22,6 @@ function UserDashboard() {
   const [isSwitchLoading, setIsSwitchLoading] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  const handleDeleteMessage = (messageId: string) => {
-    setMessages(messages.filter((message) => message._id !== messageId))
-  }
-
   const sessionResult = useSession()
   const { data: session } = sessionResult || {}
 
@@ -240,7 +236,7 @@ function UserDashboard() {
           ) : messages.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {messages.map((message) => (
-                <MessageCard key={message._id as string} message={message} onMessageDelete={handleDeleteMessage} />
+                <MessageCard key={message._id as string} message={message} />
               ))}
             </div>
           ) : (
