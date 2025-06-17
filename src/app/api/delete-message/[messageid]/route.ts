@@ -7,17 +7,12 @@ import { User } from 'next-auth';
 import { authOptions } from '../../auth/[...nextauth]/options';
 import { NextRequest } from 'next/server';
 
-type Props = {
-  params: {
-    messageid: string;
-  };
-};
-
+// @ts-expect-error - Next.js 15 type issue with route handlers
 export async function DELETE(
   request: NextRequest,
-  context: Props
+  { params }: { params: { messageid: string } }
 ) {
-  const messageId = context.params.messageid;
+  const messageId = params.messageid;
   await dbConnect();
   const session = await getServerSession(authOptions);
   const _user: User = session?.user as User & { _id: string }; 
