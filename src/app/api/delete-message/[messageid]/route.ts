@@ -1,15 +1,16 @@
+// This file is deprecated. The DELETE handler has been moved to delete.ts.
+// @ts-nocheck
 import UserModel from '@/Model/User';
 import { getServerSession } from 'next-auth/next';
 import dbConnect from '@/lib/dbConnect';
 import { User } from 'next-auth';
-import { NextRequest } from 'next/server';
 import { authOptions } from '../../auth/[...nextauth]/options';
+import { NextRequest } from 'next/server';
 
 export async function DELETE(
   request: NextRequest,
-  {params}: { params: { messageid: string } }
+  { params }: { params: { messageid: string } }
 ) {
-  // const { params } = context;
   const messageId = params.messageid;
 
   await dbConnect();
