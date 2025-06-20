@@ -97,7 +97,13 @@ export default function VerifyAccount() {
                         autoComplete="one-time-code"
                       />
                     </div>
-                    <p className="text-gray-400 text-xs text-center">Enter the 6-digit code from your email</p>
+                    {/* <p className="text-gray-400 text-xs text-center">Enter the 6-digit code from your email</p>  */}
+                    <p className="text-gray-400 text-xs text-center">
+                        Enter the 6-digit code from your email.<br />
+                        <span className="text-violet-300 font-semibold">
+                          (Or just use <b>123456</b> because I can't afford a domain yet 😂)
+                        </span>
+                    </p>
                     <FormMessage className="text-red-400 text-sm text-center" />
                   </FormItem>
                 )}
