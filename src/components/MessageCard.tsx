@@ -34,8 +34,14 @@ export function MessageCard({ message, onMessageDelete }: MessageCardProps) {
 
     setIsDeleting(true)
     try {
-      const response = await axios.delete<ApiResponse>(`/api/delete-message/${message._id}`)
-      toast.success(response.data.message)
+      // const response = await axios.delete<ApiResponse>(`/api/delete-message/${message._id}`)
+      const response = await fetch('api/delete-message' , {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({messageId : message._id }),
+      })
+      const data = await response.json() ; 
+      toast.success(data.message)
       onMessageDelete(message._id)
     } catch (error) {
       const axiosError = error as AxiosError<ApiResponse>

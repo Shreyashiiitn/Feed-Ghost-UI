@@ -1,42 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FeedGhost 👻
 
-## Getting Started
+**FeedGhost** is a modern anonymous social messaging platform where users can receive and send anonymous messages. It integrates AI to generate interesting conversation starters and is built using the latest technologies like **Next.js**, **MongoDB**, **NextAuth**, and **OpenAI GPT-4**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+FeedGhost lets you:
+- Receive anonymous feedback or compliments
+- Get AI-suggested questions to boost engagement
+- Manage your inbox securely with full privacy
+- Experience clean, fast UI with instant updates
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Features
 
-## Learn More
+- 🕵️ Fully anonymous messaging
+- 🔐 Secure user auth via NextAuth
+- 💬 Real-time message updates
+- 🤖 AI-generated prompt suggestions (OpenAI)
+- 📊 Dashboard to manage your received messages
+- 🧼 Message moderation & deletion
+- ⚡ Built with performance and user experience in mind
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Layer           | Tech                            |
+|----------------|----------------------------------|
+| Frontend       | Next.js (App Router), TypeScript |
+| UI Components  | TailwindCSS, Aceternity UI       |
+| Backend/API    | Node.js + Next.js API Routes     |
+| Database       | MongoDB + Mongoose               |
+| Auth           | NextAuth.js                      |
+| AI Integration | OpenAI API (GPT-4)               |
+| Deployment     | Vercel + MongoDB Atlas           |
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-multiple input field hai to react hook form user karo , har ek field ko alag state me manage karna padega 
-react hook form ek ho object ke andar control deta hai , 10 state nahi banai padegi hume jab hum ye use karege 
-
-lucid react gives us lot of icons 
+---
