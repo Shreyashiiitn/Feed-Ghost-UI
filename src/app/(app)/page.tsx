@@ -171,7 +171,7 @@ export default function Home() {
                 Feed-Ghost
               </span>
             </div>
-            <p className="text-gray-300">© 2024 Feed-Ghost. All rights reserved.</p>
+            <p className="text-gray-300">© 2025 Feed-Ghost. All rights reserved.</p>
             <div className="flex items-center space-x-4">
               <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm">
                 Privacy
